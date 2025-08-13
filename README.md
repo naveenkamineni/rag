@@ -156,21 +156,31 @@ The main purpose of the Speaking section in the PTE Academic test is to test ora
 ```python
 ask("How many modules in pte Academic?")
 ```
-
+```
+There are 4 modules in PTE Academic.
+```
 ### Cell 10 - Pre-requisites
 💬 **Pre-requisite:** Make sure ingestion and RAG chain definition cells have been executed.
 
 ```python
 ask("Name any three tasks included in the Speaking module?")
 ```
+```
+Based on the provided context, three tasks included in the Speaking module are:
 
+1. Read Aloud
+2. Describe Image
+3. Re-tell Lecture
+```
 ### Cell 11 - Pre-requisites
 💬 **Pre-requisite:** Make sure ingestion and RAG chain definition cells have been executed.
 
 ```python
 ask("Which key skill in the Speaking module relates to stress and intonation?")
 ```
-
+```
+Fluency, clarity, stress, and intonation.
+```
 ```python
 
 ```
