@@ -147,6 +147,16 @@ def ask(query: str):
 ```python
 ask("What is the main purpose of the Speaking section in the PTE Academic test?")
 ```
+'''
+C:\Users\kamin\AppData\Local\Temp\ipykernel_19856\2910591681.py:2: LangChainDeprecationWarning: The class `ChatOllama` was deprecated in LangChain 0.3.1 and will be removed in 1.0.0. An updated version of the class exists in the :class:`~langchain-ollama package and should be used instead. To use it run `pip install -U :class:`~langchain-ollama` and import as `from :class:`~langchain_ollama import ChatOllama``.
+  model = ChatOllama(model="llama3.2")
+C:\Users\kamin\AppData\Local\Temp\ipykernel_19856\2910591681.py:15: LangChainDeprecationWarning: The class `Chroma` was deprecated in LangChain 0.2.9 and will be removed in 1.0. An updated version of the class exists in the :class:`~langchain-chroma package and should be used instead. To use it run `pip install -U :class:`~langchain-chroma` and import as `from :class:`~langchain_chroma import Chroma``.
+  vector_store = Chroma(persist_directory="./sql_chroma_db", embedding_function=embedding)
+The main purpose of the Speaking section in the PTE Academic test is to test oral communication skills and pronunciation.
+Source:  C:\Users\kamin\Downloads\PTE_4_Modules_Overview.pdf
+Source:  C:\Users\kamin\Downloads\PTE_4_Modules_Overview.pdf
+Source:  C:\Users\kamin\Downloads\PTE_4_Modules_Overview.pdf
+'''
 
 ### Cell 9 - Pre-requisites
 💬 **Pre-requisite:** Make sure ingestion and RAG chain definition cells have been executed.
