@@ -5,7 +5,7 @@ This notebook demonstrates how to build a Retrieval-Augmented Generation (RAG) p
 
 ---
 
-![Description of Image](<img width="1583" height="931" alt="image" src="https://github.com/user-attachments/assets/83de267f-f67c-48f7-a41f-fe65af06b6be" />)
+![Description of Image](https://github.com/user-attachments/assets/83de267f-f67c-48f7-a41f-fe65af06b6be)
 
 ## ⚙️ Prerequisites
 Before running any code cells, ensure you have the following set up:
