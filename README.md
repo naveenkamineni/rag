@@ -1,9 +1,12 @@
-# 📄 RAG for PTE Academic Q&A
+# 📄 RAG using Ollama, LangChain, llama3.2(LLM)
 
 ## 📝 Overview
 This notebook demonstrates how to build a Retrieval-Augmented Generation (RAG) pipeline using a local Ollama LLM and a PDF knowledge source.
 
 ---
+
+![Description of Image](<img width="1583" height="931" alt="image" src="https://github.com/user-attachments/assets/83de267f-f67c-48f7-a41f-fe65af06b6be" />
+)
 
 ## ⚙️ Prerequisites
 Before running any code cells, ensure you have the following set up:
