@@ -29,7 +29,7 @@ Before running any code cells, ensure you have the following set up:
 %pip install langchain_community
 ```
 
-### Cell 2 - Pre-requisites
+### Cell 2 - Import Libraries
 📄 **Pre-requisite:** Ensure your PDF file path is correct and accessible.
 
 ```python
@@ -44,7 +44,7 @@ from langchain.chains import create_retrieval_chain
 import sys
 ```
 
-### Cell 3 - Pre-requisites
+### Cell 3 - Split Documents into Chunks & Store them in vector store
 📄 **Pre-requisite:** Ensure your PDF file path is correct and accessible.
 
 ```python
@@ -67,7 +67,7 @@ def ingest():
     Chroma.from_documents(documents=chunks,  embedding=embedding, persist_directory="./sql_chroma_db")
 ```
 
-### Cell 4 - Pre-requisites
+### Cell 4 - Run Only once
 📦 **Pre-requisite:** Install required Python packages before running.
 
 ```python
@@ -79,7 +79,7 @@ def ingest():
 ingest()
 ```
 
-### Cell 5 - Pre-requisites
+### Cell 5 - Hugging Face Authentication
 🔑 **Pre-requisite:** You must have a valid Hugging Face access token.
 
 ```python
@@ -89,7 +89,7 @@ access_token_write = "Your_Hugging_face_Token"
 login(token = access_token_read)
 ```
 
-### Cell 6 - Pre-requisites
+### Cell 6 - Create a RAG chain that retrieves relavent chunks and prepares a response
 🤖 **Pre-requisite:** Ollama should be installed and the model (`llama3.2` or chosen) pulled locally.
 
 ```python
@@ -143,7 +143,7 @@ def ask(query: str):
         print("Source: ", doc.metadata["source"])
 ```
 
-### Cell 8 - Pre-requisites
+### Cell 8 - Ask Question to get relavent information from the document
 💬 **Pre-requisite:** Make sure ingestion and RAG chain definition cells have been executed.
 
 ```python
@@ -152,7 +152,7 @@ ask("What is the main purpose of the Speaking section in the PTE Academic test?"
 ```
 The main purpose of the Speaking section in the PTE Academic test is to test oral communication skills and pronunciation. Source: C:\Users\kamin\Downloads\PTE_4_Modules_Overview.pdf Source:
 ```
-### Cell 9 - Pre-requisites
+### Cell 9 - Question:
 💬 **Pre-requisite:** Make sure ingestion and RAG chain definition cells have been executed.
 
 ```python
@@ -161,7 +161,7 @@ ask("How many modules in pte Academic?")
 ```
 There are 4 modules in PTE Academic.
 ```
-### Cell 10 - Pre-requisites
+### Cell 10 - Question:
 💬 **Pre-requisite:** Make sure ingestion and RAG chain definition cells have been executed.
 
 ```python
@@ -174,7 +174,7 @@ Based on the provided context, three tasks included in the Speaking module are:
 2. Describe Image
 3. Re-tell Lecture
 ```
-### Cell 11 - Pre-requisites
+### Cell 11 - Question:
 💬 **Pre-requisite:** Make sure ingestion and RAG chain definition cells have been executed.
 
 ```python
